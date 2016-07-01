@@ -1,0 +1,381 @@
+<?php
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>E09 - Webdoc</title>
+		<link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/dragdealer.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+  		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Fix part in every slide -->
+			<header id="header" class="codrops-header">
+				<button class="slider-switch">Switch view</button>
+			</header>
+
+			<!-- Demon page / Tutorial -->
+			<div id="overlay" class="overlay">
+				<div class="info">
+					<h2>Comment naviguer sur le web documentaire</h2>
+
+					<span class="info-keys">Utilisez les flèches</span>
+					<span class="info-switch">Changer de séquences</span>
+					<button>Compris !</button>
+				</div>
+			</div>
+
+			<!-- Slides -->
+			<div id="slideshow" class="dragslider">
+				<section class="img-dragger img-dragger-large dragdealer">
+					<div class="handle">
+					<!-- HOME -->
+						<div class="slide img-wrap" data-content="content-0">
+							<div><img src="img/1.jpg" alt="img1"/></div>
+							<h2>Catharsis<span>Découvrez comment la musique d'un film peut influencer vos émotions et votre perception de l'image à travers cinq exemples</span></h2>
+							<button class="content-switch" style="display:none;"></button>
+						</div>
+
+
+						<div id="begin" class="slide slide1" data-content="content-1">
+							<div class="player img-wrap" style="width:100% top:0; left:0;">
+								<video src="resources/GOT.webm">
+									Your Browser doesn't support video
+									<source src="resources/GOT.webm" type="video/webm">
+								</video>
+							</div>
+							<h2 class="movie_title">Game Of Thrones</h2>
+							<button class="content-switch" style="display:none;">Read more</button>
+							<h2>
+								<span class="musics">
+									<ul id="navigation">
+										<a><button onclick="listenMusic(1)" class="music music1">1</audio></button></a><br>
+										<a><button onclick="listenMusic(2)" class="music music2">2<audio src="audios/GOT-TRISTE.ogg"></audio></button></a><br>
+										<a><button onclick="listenMusic(3)" class="music music3">3<audio src="audios/GOT-JOIE.ogg"></button></a>
+									</ul>
+								</span>
+							</h2>
+							<h2>
+								<div class="component">
+							        <a href="http://www.facebook.com/sharer.php?t=Catharsis" target="_blank" class="icon icon-mono facebook"><button>facebook</button></a>
+							        <a href="http://twitter.com/share?text=J'ai ressenti..." target="_blank" class="icon icon-mono twitter"><button>twitter</button></a>
+							        <a href="https://plus.google.com/" target="_blank" class="icon icon-mono googleplus"><button>google+</button></a>
+							    </div>
+							</h2>
+						</div>
+
+						<div class="slide slide2" data-content="content-2">
+							<div class="player img-wrap" style="width:100% top:0; left:0;">
+								<video src="resources/LOTR.webm">
+									Your Browser doesn't support video
+									<source src="resources/LOTR.webm" type="video/webm">
+								</video>
+							</div>
+							<h2 class="movie_title">Le Seigneur des Anneaux</h2>
+							<button class="content-switch" style="display:none;">Read more</button>
+							<h2>
+								<span class="musics">
+									<ul id="navigation">
+										<a><button onclick="listenMusic(4)" class="music music4">1</button></a><br>
+										<a><button onclick="listenMusic(5)" class="music music5">
+											2
+											<audio src="audios/LOTR-BORAT.ogg"></audio>
+										</button></a><br>
+										<a><button onclick="listenMusic(6)" class="music music6">
+											3
+											<audio src="audios/LOTR-JB.ogg"></audio>
+										</button></a>
+									</ul>
+								</span>
+							</h2>
+							<h2>
+								<div class="component">
+							        <a href="http://www.facebook.com/sharer.php?t=Catharsis" target="_blank" class="icon icon-mono facebook"><button>facebook</button></a>
+							        <a href="http://twitter.com/share?text=J'ai ressenti..." target="_blank" class="icon icon-mono twitter"><button>twitter</button></a>
+							        <a href="https://plus.google.com/" target="_blank" class="icon icon-mono googleplus"><button>google+</button></a>
+							    </div>
+							</h2>
+						</div>
+						<div class="slide slide3" data-content="content-3">
+							<div class="player img-wrap">
+								<video class="video3" src="resources/ORIGINAL SHINING.webm">
+									Your Browser doesn't support video
+									<source src="resources/ORIGINAL SHINING.webm" type="video/webm">
+								</video>
+							</div>
+							<h2 class="movie_title">Shining</h2>
+							<button class="content-switch" style="display:none;">Read more</button>
+							<h2>
+								<span class="musics">
+									<ul id="navigation">
+										<a><button onclick="listenMusic(7)" class="music music7">1</button></a><br>
+										<a><button onclick="listenMusic(8)" class="music music8">2<audio src="audios/SHINNING-1.ogg"></button></a><br>
+										<a><button onclick="listenMusic(9)" class="music music9">3<audio src="audios/SHINNING DION.ogg"></button></a>
+									</ul>
+								</span>
+							</h2>
+							<h2>
+								<div class="component">
+							        <a href="http://www.facebook.com/sharer.php?t=Catharsis" target="_blank" class="icon icon-mono facebook"><button>facebook</button></a>
+							        <a href="http://twitter.com/share?text=J'ai ressenti..." target="_blank" class="icon icon-mono twitter"><button>twitter</button></a>
+							        <a href="https://plus.google.com/" target="_blank" class="icon icon-mono googleplus"><button>google+</button></a>
+							    </div>
+							</h2>
+						</div>
+						<div class="slide slide4" data-content="content-4">
+							<div class="player img-wrap">
+								<video class="video4" src="resources/Dent De La Mer.webm">
+									Your Browser doesn't support video
+									<source src="resources/Dent De La Mer.webm" type="video/webm">
+								</video>
+							</div>
+							<h2 class="movie_title">Les Dents de la Mer</h2>
+							<button class="content-switch" style="display:none;">Read more</button>
+							<h2>
+								<span class="musics">
+									<ul id="navigation">
+										<a><button onclick="listenMusic(10)" class="music music10">1</button></a><br>
+										<a><button onclick="listenMusic(11)" class="music music11">2<audio src="audios/Dent de la Mer Epique.ogg"></button></a><br>
+										<a><button onclick="listenMusic(12)" class="music music12">3<audio src="audios/Dent De La Mer Joie.ogg"></button></a>
+									</ul>
+								</span>
+							</h2>
+							<h2>
+								<div class="component">
+							        <a href="http://www.facebook.com/sharer.php?t=Catharsis" target="_blank" class="icon icon-mono facebook"><button>facebook</button></a>
+							        <a href="http://twitter.com/share?text=J'ai ressenti..." target="_blank" class="icon icon-mono twitter"><button>twitter</button></a>
+							        <a href="https://plus.google.com/" target="_blank" class="icon icon-mono googleplus"><button>google+</button></a>
+							    </div>
+							</h2>
+						</div>
+						<div class="slide slide5" data-content="content-5">
+							<div class="player img-wrap">
+								<video class="video5" src="resources/WESTERN.webm">
+									Your Browser doesn't support video
+									<source src="resources/WESTERN.webm" type="video/webm">
+								</video>
+							</div>
+							<h2 class="movie_title">Il était une fois dans l’ouest</h2>
+							<button class="content-switch" style="display:none;">Read more</button>
+							<h2>
+								<span class="musics">
+									<ul id="navigation">
+										<a><button onclick="listenMusic(13)" class="music music13">1</button></a><br>
+										<a><button onclick="listenMusic(14)" class="music music14">2<audio src="audios/WESTERN BreakingBad.ogg"></button></a><br>
+										<a><button onclick="listenMusic(15)" class="music music15">3<audio src="audios/WESTERN CALME.ogg"></button></a>
+									</ul>
+								</span>
+							</h2>
+							<h2>
+								<div class="component">
+							        <a href="http://www.facebook.com/sharer.php?t=Catharsis" target="_blank" class="icon icon-mono facebook"><button>facebook</button></a>
+							        <a href="http://twitter.com/share?text=J'ai ressenti..." target="_blank" class="icon icon-mono twitter"><button>twitter</button></a>
+							        <a href="https://plus.google.com/" target="_blank" class="icon icon-mono googleplus"><button>google+</button></a>
+							    </div>
+							</h2>
+						</div>
+
+					</div>
+				</section>
+
+				<section class="pages">
+					<div class="content" data-content="content-0">
+						<h2>Mentions légales<span></span></h2>
+						<p>Ceci est une oeuvre pédagogique réalisée dans le cadre d'une semaine intensive par cinq étudiants d'Hetic. Nous n'avons pas acquis les sources citées ci-dessous et qui sont utilisées pour ce projet.</p><br>
+						<p>Extraits de film :</p>
+						<p class="movies"></p>
+						<p>Extraits musicaux :</p>
+						<p class="credits"></p>
+						<p></p>
+					</div>
+					<div class="content" data-content="content-1">
+						<div class="container-fluid">
+							<h2 class="text-right">La musique au cinéma</h2>
+							<p class="row">
+								<p class=" col-md-offset-7 col-md-6 text-center text-justify texte">« Musique et cinéma se retrouvent dans leur embrassement du temps, de la mémoire et de l’éternité en un mariage du sensible et de l’impalpable. »
+								<br>
+								<strong>Pierre Berthomieu "La musique de film" page 16</strong>
+								</p>
+								<br>
+								<p class=" col-md-offset-7 col-md-6 text-center text-justify texte">
+								Musique et cinéma n’ont cependant pas fait le début du chemin ensemble.
+								En effet, les premiers films sont <strong>muets</strong> (rappelons que la première projection publique d’un film des frères Lumière date de 1895).
+								</p>
+								<p>
+									<video src="resources/premier_film.mp4" controls="controls" style="width:100%;">
+									</video>
+								</p>
+							</p>
+
+							<p class="row">
+								<p class=" col-md-offset-7 col-md-6 text-center text-justify texte">Un <strong>pianiste</strong> apparaît rapidement lorsque le cinéma se tourne vers le spectacle et les récits fictionnels. Il <strong>improvise</strong> en direct des morceaux classiques ou populaires qu’il arrange afin d’accompagner les images. Des catalogues dans lesquels chaque action ou émotion est associée à une ou plusieurs mélodies sont écrits afin d’aider le pianiste. La musique permet alors de <strong>rassurer les spectateurs</strong>, qui sont plongés dans le noir, et de couvrir le bruit de l’appareil de projection. Elle devient également un <strong>langage du film</strong> : la musique accompagne l’image et soutient l’action (poursuites, chutes,... ).
+								</p>
+								<p >
+									<video src="resources/film_muet_avec_musique.mp4" controls="controls" style="width:100%;">
+									</video>
+								</p>
+								<p class="col-md-offset-9 col-md-4 text-center text-justify texte">
+								De plus en plus de musiciens jouent pendant les représentations jusqu’à former de <strong>petits orchestres</strong> et des morceaux originaux sont écrits. Cependant, ces derniers sont confrontés à <strong>différents problèmes</strong> : la vitesse des films varie, les copies s'abîment rapidement,... Cela les oblige à achever voir à sauter certains morceaux. La synchronisation images et son est un vrai problème.
+								<br>
+								Ce n’est qu’à la <strong>fin des années 20</strong> que ce problème est résolu même si cela entraîne la fin des orchestres de salle. En 1927, “Le chanteur de jazz”, de Alan Crossland, est le premier film parlant.
+								Le son est craint au début. Il arrive alors que les films muets sont à leur sommet. Il est néanmoins très rapidement adopté et les <strong>films sonores se généralisent dès 1930</strong>. La musique de film peut alors se développer. Elle s’ajoute aux moyens permettant d’évoquer un ressenti chez le spectateur en développant une idée qui n'apparaît pas à l’écran, en évoquant une sensation, en jouant avec les symboles de l’images,...
+								</p>
+							</p>
+							<p class="row">
+								<p class="text-center text-justify quote"><i>"La musique de film installe chez le spectateur un procédé plus subliminal que conscient"
+								<br>
+								<strong>Pierre Berthomieu "La musique de film" page 39</strong>
+								</i></p>
+							</p>
+						</div>
+					</div>
+					<div class="content" data-content="content-2">
+						<div class="container-fluid">
+							<h2 class="text-right">L'intégration de la musique au cinéma<span>Thèmes, sons diégétiques et extra-diégétiques</span></h2>
+							<p class="row">
+								<p class=" col-md-offset-7 col-md-6 text-center text-justify texte">La musique de film <strong>accompagne des moments forts de l’action</strong> comme elle peut évoquer et <strong>provoquer des émotions</strong>, suggérer des idées, donner un autre sens aux images… Les bruitages ne sont pas inclus dans la musique de film.<br>
+								La musique de film peut <strong>faire partie de l’action ou non</strong>.<br>
+								Dans le premier cas, le son est dit <strong>diégétique</strong>. Les personnages du film, ainsi que le spectateur, entendent le son qui peut provenir d’une télévision, d’une radio…
+								Dans le second cas, le son est dit <strong>extra-diégétique</strong>. Seul le spectateur peut l’entendre (exemples : voix-off, musique d’ambiance…).</p>
+								<p>
+									<video src="resources/diégétique.mp4" controls="controls" style="width:100%;">
+									</video>
+								</p>
+							</p>
+
+							<p class="row">
+								<p >
+									<video src="resources/leitmotiv.mp4" controls="controls" style="width:100%;">
+									</video>
+								</p>
+								<p class="col-md-offset-9 col-md-4 text-center text-justify texte">Différents procédés peuvent être mis en oeuvre afin d'y intégrer une musique. Le <strong>“Leitmotiv”</strong>, mot allemand apparu au XIXème siècle en musique afin de désigner un motif musical conducteur dans une oeuvre, en est un. De nombreux compositeurs classiques en ont fait usage comme Richard Wagner dans ses opéras, Weber, Berlioz ou encore Liszt.
+								Aujourd’hui, le leitmotiv est également utilisé dans la littérature et dans le cinéma.
+								Le leitmotiv dans le cinéma est désigné par un <strong>thème mélodique qui fait son apparition avec un personnage, un objet, une situation, une idée... et qui l’accompagne</strong> fidèlement à chacune de ses réapparitions. Ce procédé permet de construire une cohérence et une familiarité auditive dans l’oeuvre.
+								Il peut varier ou être transformé au cours du récit mais est <strong>toujours reconnaissable</strong>.</p>
+							</p>
+							<p class="row">
+								<p class="text-center text-justify quote"><i>« Un film est – ou devrait être – beaucoup plus proche de la musique que du roman. Il doit être une suite de sentiments et d’atmosphères. Le thème et tout ce qui est à l’arrière-plan des émotions qu’il charrie, la signification de l’œuvre, tout cela doit venir plus tard. Vous quittez la salle et, peut-être le lendemain, peut-être une semaine plus tard, peut-être sans que vous vous en rendiez compte, vous acquérez quelque chose qui est ce que le cinéaste s’est efforcé de vous dire. » <br>
+								<strong>Stanley Kubrick, Holiday, 1964</strong>
+								</i></p>
+							</p>
+						</div>
+					</div>
+					<div class="content" data-content="content-3">
+						<div class="container-fluid">
+							<h2 class="text-right">Trucs et astuces pour susciter l'émotion par la musique</h2>
+							<p class="row">
+								<p class=" col-md-offset-7 col-md-6 text-center text-justify texte">L’objectif de la musique est de <strong>faire naître l’émotion chez ceux qui l’écoutent</strong>. Cette émotion peut entraîner des modifications physiologiques, expressives et mentales. C’est pourquoi la musique est le langage de l’âme.
+								Nous allons voir maintenant les différents éléments de la musique qui permettent de susciter l’émotion.
+								<br>
+								<strong>Une palette unique d’outils</strong>
+								Intensités, tons, rythmes, tenues des notes, instruments,... le compositeur peut jouer avec différents outils afin de composer une musique qui fera ressentir une émotion particulière voire plusieurs.
+								Par exemple, alors que des <strong>accords mineurs ou une intensité sonore faible</strong> (pianissimo) donneront une <strong>impression de peur et d’angoisse</strong>, les <strong>accords majeurs et une intensité sonore forte</strong> (fortissimo) rappelleront une ambiance <strong>joyeuse</strong>. Cela est dû aux interprétations que fait le cerveau en écoutant une musique et dériverait des stratégies vocales développées pour communiquer.
+								</p>
+								<p>
+									<img src="resources/gamme.jpg" style="width:100%;"/>
+								</p>
+							</p>
+
+							<p class="row">
+								<p class=" col-md-offset-7 col-md-6 text-center text-justify texte">
+								Des <strong>motifs</strong> et des <strong>structures sonores et musicales</strong> sont caractéristiques de certaines émotions. En jouant sur le phrase musical (parcours temporel et dynamique d’une phrase), la longueur des notes, leur succession,... une large gamme d’émotions ressort.<br>
+
+								Pour la joie : Rythme rapide. Niveau sonore moyen. Articulation très staccato.
+								Phrase resserré. Ponctuation renforcée. Contraste de durée renforcé.<br>
+
+								Pour la tristesse : Rythme lent. Niveau sonore bas. Articulation legato.
+								Phrase élargie. Ponctuation diminuée. Contraste de durée inversé.<br>
+
+								Pour la colère : Rythme très rapide. Niveau sonore élevé. Articulation staccato.
+								Phrase inversée. Ponctuation moyenne. Contraste de durée renforcé.<br>
+
+								Pour la tendresse : Rythme lent. Niveau sonore bas. Articulation legato.
+								Phrase resserrée. Ponctuation diminuée.   <br>
+
+								Pour faire peur : Notes longues (très aiguës ou très graves), chromatismes (déplacement par demi-tons), dissonances (notes qui « sonnent faux »), clusters (« grappes » de notes), sons grinçants, stridents, voix étranges… On en trouve de nombreux exemples dans les films d’Hitchcock (la scène de la douche dans Psychose!) et dans les films d’horreur et de suspense ( Shining, L’exorciste, Scream, Sixième sens…) <br>
+
+								Pour faire monter la tension : Crescendo (de plus en plus fort), ostinato (cellule rythmique ou mélodique qui se répète obstinément), superposition progressive de plusieurs plans sonores… Le duel d’Il était une fois dans l’Ouest, la scène de la gare dans Les incorruptibles, les poursuites de La mort aux trousses…
+								</p>
+								<br>
+								<br>
+								<p class="col-md-offset-9 col-md-4 text-center text-justify texte">
+								<strong>Un instrument, une ambiance</strong><br>
+								Violons, flûtes, piano, harpe… pour le romantisme et l’amour. <br>
+								Caisse claire, tambour, trompette… pour les films militaires. <br>
+								Guitare, banjo, guimbarde, imitation du galop du cheval… dans les westerns.<br>
+								Cornemuse, flûte irlandaise, tambours africains, instruments traditionnels… pour évoquer différents pays ou paysages. <br>
+								Clavecin, « vieux » instruments… pour une époque ancienne.<br>
+								Synthétiseur, instruments électroniques… pour la science fiction.<br>
+								</p>
+								<p>
+									<img src="resources/cuivre.jpg" style="width:100%;"/>
+								</p>
+							</p>
+						</div>
+					</div>
+					<div class="content" data-content="content-4">
+						<div class="container-fluid">
+							<h2 class="text-right">L'émotion musicale</h2>
+							<p class="row">
+								<p class=" col-md-offset-7 col-md-6 text-center text-justify texte">L’émotion que nous ressentons à travers la musique est principalement due à ses deux composantes : le <strong>rythme</strong> et le <strong>mode</strong>. Le rythme permet de caractériser à lui seul la mélodie. Si j'entends un son donné par un bon instrument, ce son sera agréable à l'oreille, mais si ce son se prolonge, j'éprouverai un sentiment de monotonie, d'ennui, qui peut aller jusqu’à l'exaspération.
+								Alors que si la musique suit un rythme, le sentiment de monotonie sera plus long à venir. Le rythme est d'essence <strong>musculaire</strong>; il entraîne le geste, la mimique, la danse. C’est une puissance d'émotion qui <strong>entraîne le corps à bouger</strong>. Ces mouvements amplifient les émotions qui influencent les mouvements. C’est un cercle vicieux. Le mode est un élément culturel.
+								Pour la culture occidentale, un morceau en mode mineur est plus triste alors qu’un mode majeur évoque des sentiments plus joyeux. Nous avons appris très vite à associer certains schémas de hauteur à certaines émotions et à associer les modes à la gaieté et la tristesse. Cette représentation est assez schématique des émotions musicales et se restreint à la gaieté et la tristesse mais la musique <strong>peut évoquer plus que ces deux émotions</strong> en jouant sur d’autres aspects de la musique.
+								Peu importe la personne qui écoute, les émotions perçues sont identiques pour tous.
+								</p>
+							</p>
+						</div>
+					</div>
+					<div class="content" data-content="content-5">
+						<div class="container-fluid">
+							<h2 class="text-right">La musique comme support de l'action</h2>
+							<p class="row">
+								<p class=" col-md-offset-7 col-md-6 text-center text-justify texte">Après les émotions, intéressons nous à une autre particularité de la musique de film : l’accompagnement des moments forts de l’action.
+								Les films sont ponctués de scènes où la musique joue un rôle très important.
+								Elle peut <strong>souligner et accompagner</strong> l’action comme dans un dessin animé.
+								Les réalisateurs pensent, en général, aux musiques dans un seconde temps mais le fait d’y penser en premier donne une tout autre dimension à la scène.
+
+								Un exemple est mieux qu’un long discours.
+								</p>
+								<p>
+									<video src="resources/fifth_element.mp4" controls="controls" style="width:100%;">
+									</video>
+								</p>
+
+								<p class="col-md-offset-7 col-md-6 text-center text-justify texte">Le chant de la diva est mis en <strong>parallèle</strong> avec une scène d’action qui se passe à l’étage du dessus. Le combat suit la musique et le rythme de la chanson à la note prêt. La <strong>synchronisation</strong> est parfaite. Le spectateur est pris par l’action et emmené par la musique qui donne une profondeur à la scène.
+
+								Et les émotions ?
+								De nombreuses émotions sont également palpables et transmises par cette musique.
+								L’extrait d’opéra (“Lucia di Lammermoor” de 1835 (Donizetti / livret de Cammarano)), soutenu par des <strong>cordes, des cors, des flûtes et des clarinettes</strong>, plonge l’assemblée / le spectateur dans un état de <strong>tristesse</strong>. Un aspect dramatique annonçant un élément grave se fait alors entendre. La salle / le spectateur est dans l’attente.  Vient ensuite la lamentation de Lucia qui sombre dans la <strong>folie</strong>. Le <strong>crescendo, le rire et le decrescendo</strong> inquiètent. L’auditoire est tendu.
+								Les parties a capella (sans musique) renforcent l’aspect dramatique.
+								La seconde partie (“The Diva dance”, remix d’Eric Serra, le compositeur du film) a une <strong>rythmique moderne, marquée et affirmée</strong>, qui se synchronise avec le combat mis en parallèle. Nous craignons le pire pour l’héroïne et sommes transportés par l’action. <br><br>
+								Un autre exemple :
+								</p>
+
+							<p class="row">
+								<p >
+									<video src="resources/dont_stop_me.mp4" controls="controls" style="width:100%;">
+									</video>
+								</p>
+							</p>
+
+						</div>
+				</section>
+
+			</div>
+		</div>
+		<script src="https://cdns-files.dzcdn.net/js/min/dz.js"></script>
+		<script src="js/jquery-3.0.0.js"></script>
+		<script src="js/dragdealer.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/dragslideshow.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/player.js"></script>
+	</body>
+</html>
